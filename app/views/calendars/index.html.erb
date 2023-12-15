@@ -1,4 +1,3 @@
-<div>
   <%= form_with model: @plan, url: calendars_path, class: 'form' do |f| %>
     <%= f.label :日付を選択, class: 'lavel' %>
     <%= f.date_field :date, class: 'date-select' %>
@@ -8,10 +7,13 @@
   <% end %>
 </div>
 
+<<<<<<< HEAD
 <div>
+=======
+>>>>>>> deb34595b01b7a85950c038cde0f16b29a376888
   <div class='calendar'>
     <% @week_days.each do |day| %>
-      <div class='item'>
+    <div class='item'>
         <div class='date'>
           <%= "(#{day[:month]}/#{day[:date]}) #{day_of_week_text(day[:wday])}" %>
         </div>
@@ -21,7 +23,14 @@
             <li class='plan-list'>・<%= plan %></li>
           <% end %>
         <% end %>
+<<<<<<< HEAD
       </ul>
     </div>
   <% end %>
 </div>
+=======
+        </ul>
+      </div>
+    <% end %>
+  </div>
+>>>>>>> deb34595b01b7a85950c038cde0f16b29a376888
